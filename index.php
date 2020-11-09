@@ -8,8 +8,8 @@ include_once('header.php')
       <div class="text-center"><?php if(isset($GET_['meg'])){echo $_GET['meg'];} ?></div>
       <h5 class="text-center py-3 border-bottom">會員登入</h5>
       <form action="check.php" class="mt-3 col-6 mx-auto" method="post">
-        <p class="text-center">帳號：<input type="text" name="acc"></p>
-        <p class="text-center">密碼：<input type="password" name="pw"></p>
+        <p class="text-center">帳號：<input type="text" name="acc" value="admin"></p>
+        <p class="text-center">密碼：<input type="password" name="pw" value="1234"></p>
         <p class="d-flex justify-content-around" style="font-size:0.87rem">
           <a href="forget_pw.php">忘記密碼?</a>
           <a href="register.php">註冊新帳號</a>
