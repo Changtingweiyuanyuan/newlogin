@@ -1,11 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>會員註冊</title>
-</head>
+
+
+<?php
+$title="註冊帳號";
+include_once('header.php')
+?>
+
 <body>
-    
-</body>
-</html>
+
+
+
+
+<?php
+include_once('footer.php')
+?>
