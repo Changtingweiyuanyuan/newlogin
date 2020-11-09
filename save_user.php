@@ -25,5 +25,5 @@ $pdo->exec($update_member_sql);
 echo "login更新<BR>".$update_login_sql."<BR>";
 echo "login更新<BR>".$update_member_sql."<BR>";
 
-// header("location:admin.php");
+header("location:admin.php");
 ?>

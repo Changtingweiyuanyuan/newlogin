@@ -44,7 +44,10 @@ foreach($users as $user){
         echo "<td>{$user['address']}</td>";
         echo "<td>{$user['tel']}</td>";
         echo "<td>{$user['create_time']}</td>";
-        echo "<td><a href='edit_user.php?id={$user['id']}'><button class='btn btn-light'>編輯</button></a></td>";
+        echo "<td><a href='edit_user.php?id={$user['id']}'><button class='btn btn-sm btn-light'>編輯</button></a>";
+        echo "<td><a href='del_user.php?id={$user['id']}'><button class='btn btn-sm btn-danger'>刪除</button></a>";
+        
+        echo "</td>";
         // 網頁傳值方式(GET)：在a標籤後面+一個問號? 就可以帶參數
         echo "</tr>";
 }
