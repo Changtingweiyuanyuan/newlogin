@@ -19,13 +19,13 @@ echo "確定要刪除ID=".$user_id."的資料嗎?";
 
 <!-- href='?' 表示 當前頁再跑一次 -->
 <a href='?id=<?=$user_id?>&ask=true'><button class="btn btn-sm btn-danger">確定</button></a>
-<a href='?id=<?=$user_id?>&ask=false'><button class="btn btn-sm btn-wraning">取消</button></a>
+<a href='?id=<?=$user_id?>&ask=false'><button class="btn btn-sm btn-warning">取消</button></a>
 
 <?php
 
 //判斷是否要執行刪除指令
-if(isset($_GET['$ask'])){
-    switch($_GET['$ask']){
+if(isset($_GET['ask'])){
+    switch($_GET['ask']){
         case 'true':
             $pdo->exec($sql1);
             $pdo->exec($sql2);
