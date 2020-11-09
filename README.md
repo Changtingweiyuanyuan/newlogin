@@ -27,3 +27,19 @@
 * 編輯會員資料頁(HTML+PHP)    
 
 ### 資料庫規劃
+##### 登入功能
+- login
+    * ID(id)
+    * 帳號(acc)
+    * 密碼(password)
+    * EMAIL(email)
+    * 註冊時間(create_time)
+##### 會員功能
+-member
+    * ID(id)
+    * 姓名(name)
+    * 出生年月日(birthday)
+    * 角色(VIP/一般會員/管理員)(role)
+    * 居住地(address)
+    * 電話(tel)
+    * 學歷(education)

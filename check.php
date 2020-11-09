@@ -8,6 +8,16 @@
  * 6. 依據會員身份導向不同的頁面
  */
 
+$dsn="mysql:host=localhost;dbname=member;charset=utf8";
+$pdo=new PDO($dsn,'root','');
 
+$acc=$_POST['acc'];
+$pw=$_POSTp['pw'];
+
+$sql="select * from `login` where `acc`='$acc' && `password`='$pw'";
+$check=$pdo->query($sql)->fetch();
+
+// 資料會是array格式 所以用print_r
+print_r($check);
 
 ?>
