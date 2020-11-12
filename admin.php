@@ -7,6 +7,19 @@ include_once('header.php');
     
 <h1 class="text-center">管理中心</h1>
 
+<?php
+if(isset($_COOKIE["login"])){
+    echo $_COOKIE["login"];
+}
+
+if(isset($_GET["user"])){
+    echo $_GET["user"];
+}
+
+
+?>
+
+
 
 <!-- 去資料庫撈客戶資料 -->
 <?php
