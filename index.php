@@ -1,12 +1,12 @@
 <?php
 include_once('header.php');
 
-
-if(isset($_COOKIE['login'])){
+session_start();
+if(isset($_SESSION['login'])){
   $dsn="musql:host=localhost;dbname=member;charset=utf8";
   $pdo=new PDO($dsn,'root','');
 
-  $sql_user="select `member`,`role`,`login`,`acc` from `member`.`login_id`=`login`.`id` where acc='{$_COOKIE['login']}'";
+  $sql_user="select `member`,`role`,`login`,`acc` from `member`.`login_id`=`login`.`id` where acc='{$_SESSION['login']}'";
   echo $sql_user;
 
   $user=$qdo->query($sql_user)->fetch(PDO::FETCH_ASSOC);

@@ -7,17 +7,24 @@ include_once('header.php');
     
 <h1 class="text-center">管理中心</h1>
 
-<div class="col-8ma-auto d-flex justify-content-between">
+<div class="col-8 mx-auto d-flex justify-content-between">
 <span>
 <?php
-    if(isset($_COOKIE["login"])){
-        echo $_COOKIE["login"];
+    // cookie的顯示
+    // if(isset($_COOKIE["login"])){
+    //     echo $_COOKIE["login"];
+    // }
+
+    //session的顯示
+    session_start();
+    if(isset($_SESSION['login'])){
+        echo $_SESSION['login'];
     }
 ?>
 </span>
 
 <span>
-    <a href="logout.php">登出</a>
+    <a href="logout.php">登出</a><br><br>
 </span>
 </div>
 

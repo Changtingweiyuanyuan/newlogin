@@ -38,8 +38,12 @@ if(!empty($check)){
     $member=$pdo->query($member_sql)->fetch();
     $role=$member['role'];
     // 讓cookie只存在兩分鐘
-    setcookie("login",$acc,time()+3600);
-    
+    // setcookie("login",$acc,time()+3600);
+
+    // 宣告session要開始
+    session_start();
+
+    $_SESSION['login']=$acc;
 
 
     switch($role){

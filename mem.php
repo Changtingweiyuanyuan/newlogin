@@ -11,12 +11,18 @@
     <a href="logout.php">登出</a>
 </span>
 
-親愛的
-<?php
-if(isset($_COOKIE["login"])){
-    echo $_COOKIE["login"];
-}
-?>
-你好，歡迎你
+親愛的<?php
+    // cookie的顯示
+    // if(isset($_COOKIE["login"])){
+    //     echo $_COOKIE["login"];
+    // }
+
+
+    //session的顯示
+    session_start();
+    if(isset($_SESSION['login'])){
+        echo $_SESSION['login'];
+    }
+?>你好，歡迎你
 </body>
 </html>
