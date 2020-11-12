@@ -7,15 +7,29 @@ include_once('header.php');
     
 <h1 class="text-center">管理中心</h1>
 
+<div class="col-8ma-auto d-flex justify-content-between">
+<span>
 <?php
-if(isset($_COOKIE["login"])){
-    echo $_COOKIE["login"];
-}
+    if(isset($_COOKIE["login"])){
+        echo $_COOKIE["login"];
+    }
+?>
+</span>
 
+<span>
+    <a href="logout.php">登出</a>
+</span>
+</div>
+
+
+
+
+
+
+<?php
 if(isset($_GET["user"])){
     echo $_GET["user"];
 }
-
 
 ?>
 

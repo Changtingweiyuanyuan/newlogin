@@ -1,5 +1,6 @@
 <?php
-include_once('header.php')
+include_once('header.php');
+
 
 if(isset($_COOKIE['login'])){
   $dsn="musql:host=localhost;dbname=member;charset=utf8";

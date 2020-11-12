@@ -7,6 +7,15 @@
 </head>
 <body>
 <h1>白金會員中心</h1>
-尊爵的  你好，歡迎你
+<span>
+    <a href="logout.php">登出</a>
+</span>
+尊爵的
+<?php
+if(isset($_COOKIE["login"])){
+    echo $_COOKIE["login"];
+}
+?>
+你好，歡迎你
 </body>
 </html>
